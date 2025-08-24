@@ -6,6 +6,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.example.lab_exam_2.adapters.WelcomeViewPagerAdapter
+import com.example.lab_exam_2.adapters.WelcomeScreen
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -18,7 +20,6 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        // Hide the action bar
         supportActionBar?.hide()
 
         initViews()
@@ -34,7 +35,21 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     private fun setupViewPager() {
-        val adapter = WelcomeViewPagerAdapter(this)
+        // Create welcome screen data
+        val items = listOf(
+            WelcomeScreen(
+                imageRes = R.drawable.ic_medibook_logo,
+                title = getString(R.string.welcome_title_1),
+                description = getString(R.string.welcome_subtitle_1)
+            ),
+            WelcomeScreen(
+                imageRes = R.drawable.ic_doctor,
+                title = getString(R.string.welcome_title_2),
+                description = getString(R.string.welcome_subtitle_2)
+            )
+        )
+
+        val adapter = WelcomeViewPagerAdapter(items)
         viewPager.adapter = adapter
 
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
