@@ -76,12 +76,10 @@
     <string name="profile_updated">Profile updated successfully!</string>
 
     <!-- Navigation Menu -->
-    <string name="home">Home</string>
     <string name="channelling">Channelling</string>
     <string name="medicine">Medicine</string>
     <string name="history">History</string>
     <string name="account">Account</string>
-    <string name="profile">Profile</string>
 
     <!-- Menu Items -->
     <string name="recent_transactions">Recent Transactions</string>
@@ -162,4 +160,14 @@
     <string name="service_icon_description">Service Icon</string>
     <string name="back_button_description">Go Back</string>
     <string name="menu_button_description">Open Menu</string>
+
+    <string name="welcome_message">Welcome, %1$s</string>
+    <!-- Bottom Navigation Labels -->
+    <string name="home">Home</string>
+    <string name="appointments">Appointments</string>
+    <string name="medicines">Medicines</string>
+    <string name="quick_actions">Quick</string>
+    <string name="profile">Profile</string>
+
+
 </resources>
