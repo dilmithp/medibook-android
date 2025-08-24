@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- App Name -->
+    <!-- App Information -->
     <string name="app_name">MediBook</string>
     <string name="app_tagline">Book Your Doctor</string>
     <string name="app_website">MediBook.lk</string>
+    <string name="app_description">Your Digital Healthcare Companion</string>
 
-    <!-- Welcome Screens -->
+    <!-- Welcome & Onboarding -->
     <string name="welcome_title_1">Find the Best Doctors, Save Time</string>
-    <string name="welcome_subtitle_1">Discover qualified healthcare professionals and book appointments instantly</string>
+    <string name="welcome_subtitle_1">Discover qualified healthcare professionals and book appointments instantly with just a few taps</string>
     <string name="welcome_title_2">All Your Health Needs, All in One Place</string>
-    <string name="welcome_subtitle_2">Manage appointments, order medicines, and track your wellness journey</string>
+    <string name="welcome_subtitle_2">Manage appointments, order medicines, track wellness, and access your health records securely</string>
 
     <!-- Authentication -->
     <string name="login_title">Sign In</string>
@@ -22,9 +23,11 @@
     <string name="continue_with">Or Continue With</string>
     <string name="have_account">Do You Have An Account? Sign In</string>
     <string name="no_account">Don\'t You Have An Account? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
 
-    <!-- Dashboard -->
+    <!-- Dashboard & Navigation -->
     <string name="welcome_user">Welcome, %1$s</string>
+    <string name="dashboard_subtitle">How can we help you today?</string>
     <string name="doctor_booking">Doctor Booking</string>
     <string name="order_medicine">Order Medicine</string>
     <string name="consultation">Consultation</string>
@@ -35,7 +38,7 @@
     <string name="workout_plan_generator">Workout Plan Generator</string>
     <string name="find_doctor">Find Doctor</string>
 
-    <!-- Services -->
+    <!-- Main Services -->
     <string name="why_us_title">WHY US?</string>
     <string name="why_us_description">When you select MediBook, you\'re choosing a healthcare partner prioritizing your well-being, providing convenience, and delivering quality medical care.</string>
     <string name="discover_difference">Discover the difference and experience healthcare excellence at MediBook.</string>
@@ -47,8 +50,10 @@
     <string name="search_specialization">Search Specialization</string>
     <string name="select_date">Select Date</string>
     <string name="check_availability">Check Availability</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="appointment_booked">Appointment Booked Successfully!</string>
 
-    <!-- Medicine -->
+    <!-- Medicine & Pharmacy -->
     <string name="buy_medicine_lowest_price">Buy Medicine At Lowest Price</string>
     <string name="prescriptions">Prescriptions</string>
     <string name="my_medicine">My Medicine</string>
@@ -56,8 +61,9 @@
     <string name="upload_prescriptions">Upload your prescriptions, get it delivered to your doorstep!</string>
     <string name="smarter_care">Smarter Care, Better Service</string>
     <string name="upload_now">Upload Now</string>
+    <string name="prescription_uploaded">Prescription uploaded successfully!</string>
 
-    <!-- Profile -->
+    <!-- Profile Management -->
     <string name="user_profile">User Profile</string>
     <string name="update_button">Update</string>
     <string name="delete_button">Delete</string>
@@ -67,13 +73,15 @@
     <string name="profile_phone">Phone Number: %1$s</string>
     <string name="profile_address">Address: %1$s</string>
     <string name="profile_blood_group">Blood Group: %1$s</string>
+    <string name="profile_updated">Profile updated successfully!</string>
 
-    <!-- Navigation -->
+    <!-- Navigation Menu -->
     <string name="home">Home</string>
     <string name="channelling">Channelling</string>
     <string name="medicine">Medicine</string>
     <string name="history">History</string>
     <string name="account">Account</string>
+    <string name="profile">Profile</string>
 
     <!-- Menu Items -->
     <string name="recent_transactions">Recent Transactions</string>
@@ -82,11 +90,76 @@
     <string name="contact_us">Contact Us</string>
     <string name="support">Support</string>
     <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
 
-    <!-- Common -->
+    <!-- History & Records -->
+    <string name="my_appointments">My Appointments</string>
+    <string name="my_medicine_requests">My Medicine Requests</string>
+    <string name="appointment_history">Appointment History</string>
+    <string name="prescription_history">Prescription History</string>
+    <string name="no_appointments">No appointments found</string>
+    <string name="no_prescriptions">No prescriptions found</string>
+
+    <!-- Hospital & Location -->
+    <string name="find_hospital_near_me">Find Hospital Near Me</string>
+    <string name="search_this_area">Search this area</string>
+    <string name="nearby_hospitals">Nearby Hospitals</string>
+    <string name="hospital_directions">Get Directions</string>
+    <string name="hospital_info">Hospital Information</string>
+
+    <!-- Consultation -->
+    <string name="doctor_consulting_categories">Doctor Consulting Categories</string>
+    <string name="specialization_cardiology">Cardiology</string>
+    <string name="specialization_dermatology">Dermatology</string>
+    <string name="specialization_endocrinology">Endocrinology</string>
+    <string name="specialization_gastroenterology">Gastroenterology</string>
+    <string name="specialization_neurology">Neurology</string>
+    <string name="specialization_psychiatry">Psychiatry</string>
+    <string name="specialization_general">General</string>
+
+    <!-- Meal Plan -->
+    <string name="get_best_meal_plan">Get Best Meal Plan For You</string>
+    <string name="age_label">Age</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_label">Height</string>
+    <string name="health_issues_label">Health Issues / Medicine</string>
+    <string name="generate_meal_plan">Generate Meal Plan</string>
+    <string name="meal_plan_generated">Meal plan generated successfully!</string>
+
+    <!-- Pharmacy -->
+    <string name="recommended_pharmacy_list">Here Our Recommended Pharmacy List</string>
+    <string name="nearby_pharmacies">Nearby Pharmacies</string>
+
+    <!-- Common Actions -->
     <string name="next">Next</string>
     <string name="skip">Skip</string>
     <string name="get_started">Get Started</string>
     <string name="loading">Loading...</string>
     <string name="booking">BOOKING</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry">Retry</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_general">Something went wrong. Please try again.</string>
+    <string name="field_required">This field is required</string>
+    <string name="invalid_email">Please enter a valid email address</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+
+    <!-- Success Messages -->
+    <string name="login_successful">Login successful!</string>
+    <string name="signup_successful">Account created successfully!</string>
+    <string name="logout_successful">Logged out successfully</string>
+
+    <!-- Content Descriptions (for accessibility) -->
+    <string name="logo_description">MediBook Logo</string>
+    <string name="doctor_photo_description">Doctor Photo</string>
+    <string name="service_icon_description">Service Icon</string>
+    <string name="back_button_description">Go Back</string>
+    <string name="menu_button_description">Open Menu</string>
 </resources>

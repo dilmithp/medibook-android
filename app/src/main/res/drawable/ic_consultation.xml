@@ -6,21 +6,7 @@
     android:viewportHeight="24">
 
     <path
-        android:fillColor="@color/secondary_blue"
-        android:pathData="M12,3C13.75,3 16.17,3.53 18,5.08C20.39,7.05 21,10.73 19.91,15.74C19.36,18.32 18.14,19.5 16.44,19.5C15.23,19.5 14.5,18.85 14.5,17.5C14.5,16.87 14.87,16.5 15.5,16.5H16C17.1,16.5 18,15.6 18,14.5C18,13.4 17.1,12.5 16,12.5H15C12.79,12.5 11,10.71 11,8.5C11,6.29 12.79,4.5 15,4.5C16.66,4.5 18.08,5.65 18.5,7.26" />
-
-    <circle
-        android:fillColor="@color/accent_blue"
-        android:cx="15.5"
-        android:cy="8.5"
-        android:r="1.5" />
-
-    <path
-        android:fillColor="@color/secondary_blue"
-        android:pathData="M8.5,11C9.88,11 11,9.88 11,8.5C11,7.12 9.88,6 8.5,6C7.12,6 6,7.12 6,8.5C6,9.88 7.12,11 8.5,11Z" />
-
-    <path
-        android:fillColor="@color/secondary_blue"
-        android:pathData="M8.5,12C6,12 1,13.25 1,15.75V17.5H16V15.75C16,13.25 11,12 8.5,12Z" />
+        android:fillColor="#4A90E2"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2ZM13,17H11V15H13V17ZM13,13H11V7H13V13Z" />
 
 </vector>

@@ -1,9 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Labexam2" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <!-- Base MediBook Theme -->
+    <style name="Theme.MediBook" parent="Theme.Material3.Light">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/secondary_dark_blue</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary_blue</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark_blue</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+
+        <!-- Accent color -->
+        <item name="colorAccent">@color/accent_green</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/primary_background</item>
+        <item name="colorSurface">@color/primary_white</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Error colors -->
+        <item name="colorError">@color/accent_red</item>
+        <item name="colorOnError">@color/text_white</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+
+        <!-- Window properties -->
+        <item name="android:windowBackground">@color/primary_background</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+        <!-- Material Design Components -->
+        <item name="materialButtonStyle">@style/ButtonPrimary</item>
+        <item name="textInputStyle">@style/EditTextPrimary</item>
+
+        <!-- Custom attributes -->
+        <item name="cardViewStyle">@style/CardPrimary</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
     </style>
 
-    <style name="Theme.Labexam2" parent="Base.Theme.Labexam2" />
+    <!-- Splash Theme -->
+    <style name="Theme.MediBook.Splash" parent="Theme.MediBook">
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="android:statusBarColor">@color/accent_blue</item>
+        <item name="android:navigationBarColor">@color/accent_blue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+
+    <!-- No Action Bar Theme -->
+    <style name="Theme.MediBook.NoActionBar" parent="Theme.MediBook">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Fullscreen Theme -->
+    <style name="Theme.MediBook.Fullscreen" parent="Theme.MediBook.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="Theme.MediBook.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorSecondary">@color/secondary_blue</item>
+        <item name="android:windowBackground">@color/primary_white</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- Bottom Sheet Theme -->
+    <style name="Theme.MediBook.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorSurface">@color/primary_white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+
+    <!-- Dark Theme (Optional - for future use) -->
+    <style name="Theme.MediBook.Dark" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/secondary_dark_blue</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+        <item name="colorSecondary">@color/secondary_blue</item>
+        <item name="colorAccent">@color/accent_green</item>
+        <item name="android:colorBackground">@color/text_primary</item>
+        <item name="colorSurface">@color/secondary_text_gray</item>
+        <item name="colorOnBackground">@color/text_white</item>
+        <item name="colorOnSurface">@color/text_white</item>
+    </style>
+
 </resources>

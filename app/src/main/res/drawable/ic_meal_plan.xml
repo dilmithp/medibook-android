@@ -6,13 +6,7 @@
     android:viewportHeight="24">
 
     <path
-        android:fillColor="@color/accent_orange"
+        android:fillColor="#FF9500"
         android:pathData="M8.1,13.34L2.91,8.15C2.35,7.59 2.35,6.69 2.91,6.13L6.13,2.91C6.69,2.35 7.59,2.35 8.15,2.91L13.34,8.1L8.1,13.34M14.88,11.53C14.5,11.91 14.76,12.45 15.27,12.45H20C21.1,12.45 22,13.35 22,14.45V20C22,21.1 21.1,22 20,22H4C2.9,22 2,21.1 2,20V14.45C2,13.35 2.9,12.45 4,12.45H8.73C9.24,12.45 9.5,11.91 9.12,11.53L7.29,9.7L9.7,7.29L14.88,11.53Z" />
-
-    <circle
-        android:fillColor="@color/primary_white"
-        android:cx="18"
-        android:cy="17"
-        android:r="1" />
 
 </vector>

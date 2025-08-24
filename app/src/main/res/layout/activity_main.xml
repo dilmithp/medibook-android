@@ -1,349 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary_background">
+    android:orientation="vertical"
+    android:background="#F8FBFF"
+    android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcomeUser"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/padding_large">
+        android:text="Welcome to MediBook"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center" />
 
-        <!-- Header Section -->
+    <!-- Doctor Booking Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDoctorBooking"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="@dimen/margin_large">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tvWelcomeUser"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/welcome_user"
-                    android:textSize="@dimen/text_size_title"
-                    android:textStyle="bold"
-                    android:textColor="@color/text_primary" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_tagline"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textColor="@color/text_secondary" />
-
-            </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
 
             <TextView
-                android:id="@+id/tvProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textSize="@dimen/text_size_medium"
-                android:textColor="@color/accent_blue"
-                android:background="?android:attr/selectableItemBackground"
-                android:padding="@dimen/padding_small"
-                android:clickable="true"
-                android:focusable="true" />
+                android:text="Doctor Booking"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
 
         </LinearLayout>
 
-        <!-- Service Cards Grid -->
-        <GridLayout
+    </androidx.cardview.widget.CardView>
+
+    <!-- Order Medicine Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOrderMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:layout_marginBottom="@dimen/margin_large">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardDoctorBooking"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                xmlns:app="http://schemas.android.com/apk/res-auto">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_doctor"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Doctor Booking" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/doctor_booking"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardOrderMedicine"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_medicine"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Order Medicine" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/order_medicine"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardConsultation"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_consultation"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Consultation" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/consultation"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardHospitalFinder"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_hospital"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Hospital Finder" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/hospital_near_me"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardPharmacy"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_pharmacy"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Pharmacy" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pharmacy_near_me"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardMealPlan"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_columnWeight="1"
-                android:layout_margin="@dimen/margin_small"
-                app:cardCornerRadius="@dimen/card_corner_radius"
-                app:cardElevation="@dimen/card_elevation"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:padding="@dimen/padding_medium">
-
-                    <ImageView
-                        android:layout_width="@dimen/icon_size_large"
-                        android:layout_height="@dimen/icon_size_large"
-                        android:src="@drawable/ic_meal_plan"
-                        android:layout_marginBottom="@dimen/margin_small"
-                        android:contentDescription="Meal Plan" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/meal_plan_generator"
-                        android:textSize="@dimen/text_size_medium"
-                        android:textStyle="bold"
-                        android:textColor="@color/text_primary"
-                        android:gravity="center" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
-
-        <!-- Why Us Section -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/card_corner_radius"
-            app:cardElevation="@dimen/card_elevation"
-            android:layout_marginBottom="@dimen/margin_medium">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/padding_large">
+                android:text="Order Medicine"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/why_us_title"
-                    android:textSize="@dimen/text_size_title"
-                    android:textStyle="bold"
-                    android:textColor="@color/text_primary"
-                    android:layout_marginBottom="@dimen/margin_small" />
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/why_us_description"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textColor="@color/text_secondary"
-                    android:lineSpacingExtra="2dp"
-                    android:layout_marginBottom="@dimen/margin_small" />
+    </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/discover_difference"
-                    android:textSize="@dimen/text_size_medium"
-                    android:textColor="@color/text_primary"
-                    android:textStyle="italic" />
+    <!-- Consultation Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardConsultation"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
 
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
 
-        </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultation"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-</ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Hospital Finder Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHospitalFinder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Hospitals"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Pharmacy Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPharmacy"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Pharmacy"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Meal Plan Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMealPlan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Plan Generator"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Profile Link -->
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="16sp"
+        android:textColor="#007AFF"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp" />
+
+</LinearLayout>
