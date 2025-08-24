@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MediBook</string>
+    <string name="app_tagline">Book Your Doctor</string>
+    <string name="app_website">MediBook.lk</string>
+
+    <!-- Welcome Screens -->
+    <string name="welcome_title_1">Find the Best Doctors, Save Time</string>
+    <string name="welcome_subtitle_1">Discover qualified healthcare professionals and book appointments instantly</string>
+    <string name="welcome_title_2">All Your Health Needs, All in One Place</string>
+    <string name="welcome_subtitle_2">Manage appointments, order medicines, and track your wellness journey</string>
+
+    <!-- Authentication -->
+    <string name="login_title">Sign In</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="continue_with">Or Continue With</string>
+    <string name="have_account">Do You Have An Account? Sign In</string>
+    <string name="no_account">Don\'t You Have An Account? Sign Up</string>
+
+    <!-- Dashboard -->
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="doctor_booking">Doctor Booking</string>
+    <string name="order_medicine">Order Medicine</string>
+    <string name="consultation">Consultation</string>
+    <string name="hospital_near_me">Hospital Near Me</string>
+    <string name="pharmacy_near_me">Pharmacy Near Me</string>
+    <string name="meal_plan_generator">Meal Plan Generator</string>
+    <string name="lab_report_reader">Lab Report Reader</string>
+    <string name="workout_plan_generator">Workout Plan Generator</string>
+    <string name="find_doctor">Find Doctor</string>
+
+    <!-- Services -->
+    <string name="why_us_title">WHY US?</string>
+    <string name="why_us_description">When you select MediBook, you\'re choosing a healthcare partner prioritizing your well-being, providing convenience, and delivering quality medical care.</string>
+    <string name="discover_difference">Discover the difference and experience healthcare excellence at MediBook.</string>
+
+    <!-- Doctor Booking -->
+    <string name="find_best_doctor">Find Best Doctor, Save Time</string>
+    <string name="search_doctor">Search Doctor</string>
+    <string name="select_hospital">Select Hospital</string>
+    <string name="search_specialization">Search Specialization</string>
+    <string name="select_date">Select Date</string>
+    <string name="check_availability">Check Availability</string>
+
+    <!-- Medicine -->
+    <string name="buy_medicine_lowest_price">Buy Medicine At Lowest Price</string>
+    <string name="prescriptions">Prescriptions</string>
+    <string name="my_medicine">My Medicine</string>
+    <string name="requests">Requests</string>
+    <string name="upload_prescriptions">Upload your prescriptions, get it delivered to your doorstep!</string>
+    <string name="smarter_care">Smarter Care, Better Service</string>
+    <string name="upload_now">Upload Now</string>
+
+    <!-- Profile -->
+    <string name="user_profile">User Profile</string>
+    <string name="update_button">Update</string>
+    <string name="delete_button">Delete</string>
+    <string name="profile_name">Name: %1$s</string>
+    <string name="profile_email">Email: %1$s</string>
+    <string name="profile_age">Age: %1$d</string>
+    <string name="profile_phone">Phone Number: %1$s</string>
+    <string name="profile_address">Address: %1$s</string>
+    <string name="profile_blood_group">Blood Group: %1$s</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="channelling">Channelling</string>
+    <string name="medicine">Medicine</string>
+    <string name="history">History</string>
+    <string name="account">Account</string>
+
+    <!-- Menu Items -->
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="doctor_appointments">Doctor Appointments</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="support">Support</string>
+    <string name="logout">Logout</string>
+
+    <!-- Common -->
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="loading">Loading...</string>
+    <string name="booking">BOOKING</string>
+</resources>

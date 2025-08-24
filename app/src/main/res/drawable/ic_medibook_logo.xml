@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Background Circle -->
+    <circle
+        android:fillColor="@color/accent_blue"
+        android:cx="60"
+        android:cy="60"
+        android:r="55" />
+
+    <!-- Inner White Circle -->
+    <circle
+        android:fillColor="@color/primary_white"
+        android:cx="60"
+        android:cy="60"
+        android:r="45" />
+
+    <!-- Medical Cross -->
+    <path
+        android:fillColor="@color/accent_blue"
+        android:pathData="M50,35 L70,35 L70,45 L80,45 L80,65 L70,65 L70,75 L50,75 L50,65 L40,65 L40,45 L50,45 Z" />
+
+    <!-- Book Pages -->
+    <path
+        android:fillColor="@color/secondary_blue"
+        android:pathData="M35,80 L85,80 L82,90 L38,90 Z" />
+
+    <path
+        android:fillColor="@color/primary_light_gray"
+        android:pathData="M37,83 L83,83 L83,85 L37,85 Z" />
+
+    <path
+        android:fillColor="@color/primary_light_gray"
+        android:pathData="M39,87 L81,87 L81,88 L39,88 Z" />
+
+    <!-- Stethoscope accent -->
+    <circle
+        android:fillColor="@color/accent_green"
+        android:cx="25"
+        android:cy="30"
+        android:r="3" />
+
+    <circle
+        android:fillColor="@color/accent_green"
+        android:cx="95"
+        android:cy="30"
+        android:r="3" />
+
+</vector>
